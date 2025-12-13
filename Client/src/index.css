@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
+.slider{
+    height: 100%;
+    -webkit-appearance: none;
+    background: transparent;
+}
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    width: 30px;
+    min-height: 30px;
+    background-image: url(/slide_icon.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+*{
+    font-family: Outfit;
+}
+
+.bg-layer{
+    background-image: url(/bg_layer.png);
+}
