@@ -10,7 +10,6 @@ app.use(urlencoded({extended:true}))
 app.use(cors());
 connect(process.env.MONGODB_URL);
 app.get('/',(req,res)=>{
-    const html = '<h1>Server Started</h1>'
-    return res.send(html)
+    return res.json('api working')
 })
 app.listen(PORT,()=>console.log('Server Started at ' + PORT))
