@@ -12,4 +12,5 @@ connect(process.env.MONGODB_URL);
 app.get('/',(req,res)=>{
     return res.json('api working')
 })
+
 app.listen(PORT,()=>console.log('Server Started at ' + PORT))
