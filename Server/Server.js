@@ -2,6 +2,7 @@ import 'dotenv/config'
 import express, { urlencoded } from 'express'
 import cors from 'cors'
 import { connect } from './Config/connect.js';
+import userRouter from './Routers/userRoutes.js';
 
 const app = express();
 const PORT = process.env.PORT || 8000;
@@ -12,5 +13,6 @@ connect(process.env.MONGODB_URL);
 app.get('/',(req,res)=>{
     return res.json('api working')
 })
+app.use('/api/user',userRouter)
 
 app.listen(PORT,()=>console.log('Server Started at ' + PORT))
