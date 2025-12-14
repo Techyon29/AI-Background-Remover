@@ -7,7 +7,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node Server.js",
+    "start": "node server.js",
     "server": "nodemon server.js",
     "build": "echo 'No build step required for this plain Node.js/Express project'"
   },
